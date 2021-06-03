@@ -12,7 +12,9 @@
 
 from tkinter import *
 import tkinter as tk
-
+if __name__ == '__main__':
+    window = Tk()
+    window.withdraw()
 root = tk.Tk()
 
 canvas = tk.Canvas(root, width=200, height=200, bg="#FF00FF");
@@ -24,6 +26,26 @@ Text Rendering Example:
 canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
 '''
 # Put your code below
+num = 0
+b = True
+nums = 0
+num1 = 0
+boolean = True
+str = "ice cream"
+for int in range(4):
 
+
+    canvas.create_text(100,100+num,text=str, font=("Arial", 16))
+    b = False
+    nums += 1
+
+    if b==False:
+        num = 48
+        if nums == 2:
+            num = 24
+        if nums ==3:
+            num = 72
+            str = "banana"
+            boolean=False
 
 root.mainloop()
